@@ -1,5 +1,11 @@
-class Pattern:
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+import random
+from skimage.feature import corner_harris, corner_peaks
+from sklearn.cluster import DBSCAN
 
+class Pattern:
 
     def __init__(self, name, dims, creases):
         self.creases = creases
@@ -11,7 +17,9 @@ class Pattern:
         pass
 
 
-    def make_creases(self):
-        for c in creases:
-            c.make_crease()
+    def save():
+        pass
+
+
+
 
