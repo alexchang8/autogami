@@ -1,6 +1,6 @@
 #Class for Crease object, basically a vector wrapper
 
-class Crease
+class Crease:
     
     def __init__(self, start, stop):
         self.start = start
