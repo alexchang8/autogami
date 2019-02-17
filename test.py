@@ -1,5 +1,6 @@
 from objects.crease import Crease
 from objects.patternLoader import PatternLoader
+from objects.gcode import Gcode
 
 # c1 = Crease((95, 20),(5, 65))
 # c2 = Crease((5, 45),(95, 80))
@@ -13,9 +14,12 @@ from objects.patternLoader import PatternLoader
 # for c in g_list:
 #     print(c)
 
-p = PatternLoader("images/")
+pl = PatternLoader("images/")
+p = pl.loadPattern("frog.png")
 
-print(p.loadPattern("frog.png"))
+g = Gcode("frog", p).to_string_list()
 
+for c in g:
+    print(c)
 
 
