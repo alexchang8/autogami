@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import random
 from skimage.feature import corner_harris, corner_peaks
 from sklearn.cluster import DBSCAN
+from pattern import Pattern
+from crease import Crease
 
-from .crease import Crease
-from .pattern import Pattern
 
 class PatternLoader:
 
