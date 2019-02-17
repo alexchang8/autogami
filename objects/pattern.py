@@ -1,11 +1,14 @@
-class Pattern():
+class Pattern:
 
 
-    def __init__(self, creases):
+    def __init__(self, name, dims, creases):
         self.creases = creases
+        self.name = name
+        self.dims = dims
 
     def from_image(self, img):
         #lillian
+        pass
 
 
     def make_creases(self):
