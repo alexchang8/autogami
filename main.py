@@ -10,6 +10,15 @@ def home():
 def design():
 	return render_template("design.html")
 
+'''
+@app.route("/download")
+def download():
+	try:
+		return send_file('/var/www/PythonProgramming/PythonProgramming/static/ohhey.pdf', attachment_filename='pattern.pdf')
+	except Exception as e:
+		return str(e)
+'''
+
 
 '''
 @app.route("/patterns/")
