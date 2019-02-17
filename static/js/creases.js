@@ -20,17 +20,78 @@ d3.csv("static/data/creases.csv", function(data) {
      	$("#experience-title").append("<div class='portfolio-modal modal fade' id='portfolioModal" + count 
      		+ "' tabindex='-1' role='dialog' aria-hidden='true'><div class='modal-content'><div class='close-modal' data-dismiss='modal'><div class='lr'><div class='rl'></div></div></div><div class='container'><div class='row'><div class='col-lg-8 col-lg-offset-2'><div class='modal-body projectinfo'><h2 id='projecty' class='project-title'>"+ thing["thing"]+ 
      		"</h2><img src='static/img/creases/"+ thing["thing"]+ ".jpg' width='400' height='400' style='margin: auto;' class='img-responsive img-centered'><p id='submitme' align='left'>" + 
-     		"<a id='down' class='downloadbutton' href='#' onclick='passtoFlask()'><button id='rip' type='button' onclick='passtoFlask('hi')'>download</button></a></p>"+
+     		"<a id='down' class='downloadbutton' onclick='"+String(thing["thing"])+"()'><button id='rip' type='button' onclick='passtoFlask('hi')'>download</button></a></p>"+
      		"</div></div></div></div></div></div>");
     	count = count + 1;
     });
 });
 console.log("wtf")
 function passtoFlask(name){
+	var help = document.getElementById("down");
 	$('a#down').attr({target: '_blank', href  : 'static/data/'+ thing["thing"]+ '.txt'});
+}
+function frog(){
+	var help = document.getElementById("down");
+	$('a#down').attr({target: '_blank', href  : 'static/data/frog.txt'});
+}
+function butterfly(){
+	console.log('ajskhdflaksdhfklash');
+	var help = document.getElementById("down");
+	$('a#down').attr({target: '_blank', href  : 'static/data/frog.txt'});
+}
+function turtle(){
+	console.log('ajskhdflaksdhfklash');
+	var help = document.getElementById("down");
+	$('a#down').attr({target: '_blank', href  : 'static/data/frog.txt'});
+}
+function crane(){
+	var help = document.getElementById("down");
+	$('a#down').attr({target: '_blank', href  : 'static/data/crane.txt'});
+}
+function bear(){
+	console.log('ajskhdflaksdhfklash');
+	var help = document.getElementById("down");
+	$('a#down').attr({target: '_blank', href  : 'static/data/frog.txt'});
+}
+function bird(){
+	console.log('ajskhdflaksdhfklash');
+	var help = document.getElementById("down");
+	$('a#down').attr({target: '_blank', href  : 'static/data/frog.txt'});
+}
+function locust(){
+	console.log('ajskhdflaksdhfklash');
+	var help = document.getElementById("down");
+	$('a#down').attr({target: '_blank', href  : 'static/data/frog.txt'});
+}
+function pirate(){
+	console.log('ajskhdflaksdhfklash');
+	var help = document.getElementById("down");
+	$('a#down').attr({target: '_blank', href  : 'static/data/frog.txt'});
+}
+function swallow(){
+	console.log('ajskhdflaksdhfklash');
+	var help = document.getElementById("down");
+	$('a#down').attr({target: '_blank', href  : 'static/data/frog.txt'});
+}
+function clawed_bear(){
+	console.log('ajskhdflaksdhfklash');
+	var help = document.getElementById("down");
+	$('a#down').attr({target: '_blank', href  : 'static/data/frog.txt'});
+}
+function dragon(){
+	console.log('ajskhdflaksdhfklash');
+	var help = document.getElementById("down");
+	$('a#down').attr({target: '_blank', href  : 'static/data/frog.txt'});
+}
+function rhino(){
+	console.log('ajskhdflaksdhfklash');
+	var help = document.getElementById("down");
+	$('a#down').attr({target: '_blank', href  : 'static/data/frog.txt'});
 }
 
 
+
+//thing["thing"]+'()
 //on submit, should "submit" the button and the input data is the image path
 /*
 <form action='{{ url_for('download') }}' method='post'>
