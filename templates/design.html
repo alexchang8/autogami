@@ -1,46 +1,61 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Paper Shaper</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link href="css/boots/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
-</head>
-<body>
-    <div>
-        <!-- Landing Page -->
-        <div id="landing">
-            <div id = "intro-text">
-                <h1>
-                    <span class="title">insert design template here</span>
-                </h1>
-                <div id = "sub">
-                    <h2>
-                        <span class="typed"></span>
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </div>
+{% extends "template.html" %}
 
-    <script src="js/plugins.js"></script>
-    <script src="js/vendor/jquery.lettering-0.6.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="js/vendor/jquery.aniview.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+{% block content %}
+
+ <div id="education">
+        <div class="container">
+            <div class="row rightalign">
+                <p id = "experience-title">DEMO</p>
+                    <section id="portfolio">
+                    <div class="container">
+                        <div class="row">
+                        </div>
+
+						<div id="demoCon" class="js-masonry">
+							<div class="container"></div>
+						</div>
+
+
+                        <!--on hold
+                        <div class="js-masonry">-->
+                        	<!--after this part, add dynamically
+                            <div class="col-sm-4 portfolio-item">
+                                <a href="#port1" class="portfolio-link artport" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <h4>Butterfly</h4>
+                                        </div>
+                                    </div>
+                                    <img src="static/img/creases/butterfly.jpg" class="img-responsive" alt="Matterhorn"></img>
+                                </a>
+                            </div>
+                            <div class="col-sm-4 portfolio-item">
+                                <a href="#port2" class="portfolio-link artport" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <h4>Turtle</h4>
+                                        </div>
+                                    </div>
+                                    <img src="static/img/creases/turtle.jpg" class="img-responsive" alt="CUAir">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 portfolio-item">
+                                <a href="#port3" height="2048" width="1536" class="portfolio-link artport" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <h4>Crane</h4>
+                                        </div>
+                                    </div>
+                                    <img src="static/img/creases/crane.jpg" class="img-responsive" alt="Santorini">
+                                </a>
+                            </div>-->
+                        </div>
+                    </div>
+                    </section>
+            </div>
+       </div>
+</div>
+
+
+{% endblock %}
+
