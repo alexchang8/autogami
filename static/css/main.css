@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css")
 @import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 
 
@@ -15,10 +16,12 @@ body {
     margin: 0px;
     background-color: #ffffff; /*white*/
     color: #FFFFFF;
-    font-family: 'Frank Ruhl Libre', serif;}
+    font-family: 'Lato';
+}
 
 p{
     color: #000;
+	font-family: 'Lato';
 }
 h3{
     color: black;
@@ -33,18 +36,18 @@ li{
     color:black;
 }
 button{
-    border: 2px solid black;
+    border: 1px solid black;
     font-color: black;
     background: transparent;
 }
 button:hover{
-    border: 2px solid white;
+    border: 1px solid white;
     color: white;
     background: black;
 }
 #resumebutton{
     color: black;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 .lynx{
     padding-top: 10px;
@@ -54,7 +57,7 @@ button:hover{
 .btn-outline {
   color: white;
   font-size: 40px;
-  border: solid 2px white;
+  border: solid 1px white;
   background: transparent;
   transition: all 0.3s ease-in-out;
   margin-top: 15px;
@@ -101,7 +104,7 @@ button:hover{
 }
 #subtitle{
   font-size: 30px;
-  padding-top:100px;
+  padding-top: 70px;
 }
 #intro-text{
   padding-top:170px;
@@ -140,6 +143,7 @@ h2 {
   display: block;
   float: left;
   position: relative;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 .title span {
   /*transform: skew(-10deg);*/
