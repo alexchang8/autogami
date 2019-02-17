@@ -12,8 +12,8 @@ class Gcode:
         gcode.append("G91")
         gcode.append("G1 Z10") #move the print head up       
         for crease in self.pattern.creases:
-            sp1 = (str(crease.start[0]*self.scale + 50), str(crease.start[1]*self.scale + 5))
-            sp2 = (str(crease.stop[0]*self.scale + 50), str(crease.stop[1]*self.scale + 5))
+            sp1 = (str(crease.start[0]*self.scale + 200), str(crease.start[1]*self.scale + 5))
+            sp2 = (str(crease.stop[0]*self.scale + 200), str(crease.stop[1]*self.scale + 5))
             gcode.append("G90")
             gcode.append("G1 " + "X" + sp1[0] + " Y" + sp1[1] + " F2000") #move the stopprint head to p1
             gcode.append("G91")
