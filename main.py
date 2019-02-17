@@ -9,7 +9,10 @@ def home():
 @app.route("/design")
 def design():
 	return render_template("design.html")
-
+'''
+@app.route("/download")
+def download():
+'''
 '''
 @app.route("/download")
 def download():
