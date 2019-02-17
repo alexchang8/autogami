@@ -150,6 +150,7 @@ h2 {
   display: block;
   float: left;
   position: relative;
+  font-size: 110px;
   font-family: 'Frank Ruhl Libre', serif;
 }
 .title span {

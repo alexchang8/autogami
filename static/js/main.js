@@ -66,4 +66,8 @@ document.getElementById("down").onclick = function () {
   alert('hello!'); 
 };
 */
+document.getElementById("rip").addEventListener("click", function(e) {
+  //getdata()
+  console.log("hi");
+});
 
