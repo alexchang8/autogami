@@ -1,6 +1,7 @@
-from objects.crease import Crease
-from objects.patternLoader import PatternLoader
-from objects.gcode import Gcode
+from crease import Crease
+from patternLoader import PatternLoader
+from gcode import Gcode
+from pattern import Pattern
 
 # c1 = Crease((95, 20),(5, 65))
 # c2 = Crease((5, 45),(95, 80))
@@ -17,9 +18,13 @@ from objects.gcode import Gcode
 pl = PatternLoader("images/")
 p = pl.loadPattern("frog.png")
 
+#p.save_to_text("patterndb/", "frog")
+
 g = Gcode("frog", p).to_string_list()
 
-for c in g:
-    print(c)
+# for c in g:
+#     print(c)
+
+# print(sum((1,2)))
 
 
