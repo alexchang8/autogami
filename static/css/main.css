@@ -52,6 +52,10 @@ button:hover{
     color: black;
     padding-right: 20px;
 }
+.downloadbutton{
+    color: black;
+    padding-right: 20px;
+}
 .lynx{
     padding-top: 10px;
     text-align: center;
@@ -403,6 +407,8 @@ h2 {
   opacity: 1;
   color: rgb(255, 137, 150);
   text-align: center;
+  width: 400px
+  height: 400px;
 }
 /*
 .artport{
