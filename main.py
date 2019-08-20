@@ -1,4 +1,6 @@
 from flask import Flask, request, render_template
+from segments.graph_extraction import extract_dict
+from flask import jsonify
 
 app = Flask(__name__)
 
@@ -6,9 +8,21 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/app")
+def js_app():
+    return render_template("app.html")
+
 @app.route("/design")
 def design():
 	return render_template("design.html")
+
+@app.route("/api/extract-graph", methods=['POST'])
+def extract():
+	print(request.files)
+	e = extract_dict(request)
+	print(e)
+	return jsonify(e)
+
 '''
 @app.route("/download")
 def download():
@@ -39,5 +53,4 @@ if __name__ == '__main__':
     app.run(port=6000, debug = False)
     '''
 if __name__ == "__main__":
-	app.run(debug=True)
-
+	app.run()
